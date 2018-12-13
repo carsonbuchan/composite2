@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+    <div class="costContainer col-6">
+        <h1 class="title cost col-6">Cost</h1>
+        <p class="price col-4"> $89/Night </p>
+        <div class="nightsStaying">
+        <p>Book Nights</p>
+        <p class="priceTotal col-6">$89</p>
+        <input onchange="addNights()" class="nightsStayingInput" type="number" value='1'>
+        
+    </div>
+</div>
+<script>
+//Add this to your js file
+var priceDOM = document.getElementsByClassName("price")[0].innerHTML.split('/')[0];
+var priceTotalDOM = document.getElementsByClassName("priceTotal")[0];
+var nightsDOM = document.getElementsByClassName("nightsStayingInput")[0];
+
+function addNights () {
+	var nights = nightsDOM.value;
+	var price = Number(priceDOM.split('$')[1]);
+	priceTotalDOM.innerHTML = '$' + (price * nights);
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,173 @@
+*
+{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0 auto;
+}
+
+.hero{
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: #f1f1f2;
+}
+
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/*Nav*/
+nav{
+    height: 100px;
+    background: #c6c4c4;
+}
+
+#logout{
+    width: 100px;
+    float: right;
+    margin-right: 2%;
+    margin-top: 30px;
+}
+
+#account{
+    width: 100px;
+    float: right;
+    margin-right: 2%;
+    margin-top: 30px;
+}
+
+#logo{
+    width: 100px;   
+}
+
+#logout:hover{
+    opacity: 0.5;
+}
+
+#logo:hover{
+    opacity: 0.5;
+}
+
+#account:hover{
+    opacity: 0.5;
+}
+
+/*Main*/
+main
+{
+    float:left;
+    width:100%;
+}
+
+
+main > *
+{
+    float:left;
+}
+
+.title{
+    float: left;
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+#roomLg{
+    float: left;
+}
+
+.imageHolder{
+    font-family: 'Oswald', sans-serif;   
+    float:left;
+}
+
+.costContainer{
+}
+
+.costContainer p{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5rem;
+}
+
+.price, .priceTotal{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5rem;
+}
+
+.nightsStaying{
+}
+
+.nightsStayingInput{
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #56ccf2;
+    background-color: #eee;
+    color: #333;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.content{
+    float: left;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+#booking{
+    height: 100px;
+}
+
+/* Footer */
+#footerFix
+{
+    clear:both;
+    height:100px;
+}
+footer{
+    margin-top: 2rem;
+    background: #c6c4c4;
+    text-align: center;
+    padding: 1rem;
+    position: absolute;
+    bottom: 0px;
+    height: 100px;
+    width:100%;
+}
+
+/*columns*/
+col-1, .col-2, .col-3, .col-4, col-6, col-10, col-12 {
+    box-sizing: border-box;
+}
+.col-1 {
+    max-width: 8.3%;
+}
+.col-2{
+    max-width: 16.6%
+}
+.col-3 {
+    max-width: 25%;
+    padding: 2%;
+}
+.col-4 {
+    max-width: 33.3%;
+}
+.col-6{
+    max-width: 50%;
+    padding: 2%;
+}
+.col-10{
+    max-width: 83.3%
+}
+.col-12 {
+    max-width: 100%;
+}
+
+@media(max-width: 768px){
+     .col-1, .col-2, .col-3, .col-4, .col-6, .col-10, .col-12 {
+        max-width: 100%;
+    }    
+}
